@@ -1,2 +1,2 @@
-# workSheet2DevWeb
--Hoja de trabajo numero dos para el curso de desarrollo web
+# proyecto_metodos
+Proyecto final curso métodos numéricos

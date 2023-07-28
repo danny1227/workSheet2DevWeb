@@ -1,0 +1,451 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ENLACE PAA BOOSTRAP 6 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- ENLACE PARA GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:ital,wght@1,300&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <!-- ENLACE PARA CSS CUSTOMIZADO -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- ENLACE SCROLL REVEAL -->
+    <!--<script src="https://unpkg.com/scrollreveal"></script>-->
+    <!-- ENLACE PARA JQUERY -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+    <title>METODO NEWTON RAPSHON| Daniel Ramirez</title>
+</head>
+<body>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+</div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("heady.html"); 
+  });
+</script>
+<!--end of Navigation bar-->
+<br>
+  <ul class="nav nav-tabs fixed-top" style="margin-block-start: 6%; background-color: rgb(243, 243, 243);">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="#">Descripcion</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#experiencia">Experiencia</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#origen"> Origen</a>
+    </li>    
+    <li class="nav-item">
+      <a class="nav-link" href="#ejemplos1">Algoritmo y Ejemplos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#cod-c">Codigo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#adven">Ventajas y Desventajas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#referencias">Referencias</a>
+    </li>
+  </ul>
+
+<br><br>
+
+
+<section id="description">
+  <div class="row" style="justify-content: center; text-align: justify;">
+    <div class="col-md-8">
+      <div class="card border-info  mb-3 shadow p-3 mb-5 bg-light rounded">
+        <p class="h3" style="text-align: center;">
+          Descripcion:
+        </p>
+        <p class="h5">
+            Es una de las técnicas numéricas para resolver un problema de búsqueda de raíces f(x) =
+            0 más poderosas y conocidas. Hay muchas formas de introducirlo. La más común consiste en
+            considerarlo gráficamente. Otra posibilidad consiste en derivarlo como una técnica que
+            permite lograr una convergencia más rápida que la que ofrecen otros tipos de iteración
+            funcional. Una tercera forma de introducir este método se basa en los polinomios de Taylor.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<header class="header mt-1">
+ <div class="container">
+   <div class="row"> <!-- HACE UNA FILA DE 12 COLUMNAS-->
+     <div class="col-md-5"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
+        <div class="content-header-left">
+          <a>
+          <img title="Funcion del metodo graficamente"  class="shadow mb-5 bg-body" src="img/Newton/NewtonIteration_Ani.gif" alt="" style="width: 100%;">
+          </a>          
+          </div>
+     </div>
+     <div class="col-md-7"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
+        <div class="header-content-right">
+          <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light rounded">
+            <div class="card-body" style="text-align: justify;">
+              <h1> Metodo de Newton Raphson </h1>
+          <h5> Definición :</h5>
+            <p class="mt-3">
+                El método Newton-Raphson, o método Newton, es una potente técnica
+                para resolver ecuaciones numéricamente. Como gran parte del cálculo diferencial,
+                se basa en la simple idea de la aproximación lineal. <br> El método Newton,
+                utilizado correctamente, suele llegar a una raíz con una eficacia devastadora. <br>
+ <br>           La eficiencia de este metodo es entender el algoritmo, conocer como actua en la 
+                seccion de ejemplos, visualizar el código, y la parte interesante donde vemos el 
+                nacimiento del método Newton.
+            </p>          
+            </div>
+          </div>
+        </div>
+     </div>
+   </div>
+ </div>
+
+</header>
+
+<section class="" id="experiencia" style="background: rgb(236, 245, 247);">
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light my-4 rounded" style="margin-left: 45px; margin-right: 45px;">
+          <div class="card-body" style="text-align: justify;">
+            <p class="h5" style="text-align: center;">
+              Mi experiencia con el metodo
+            </p>       
+            <p class="mt-3">
+              Como se podrá apreciar más adelante el algoritmo apra este metodos es 
+              muy sencillo, tan sencillo como unos cuantos pasoso para realizar.
+              <br>
+              Y lo consider tan interante porque con una manera tan sencilla de codificarlo
+              como se describe, es muy "robusto", y podremos llegar a una aproximación muy certera
+              sin ocupar algoritmos muy complejos.
+            </p>
+            </div>
+      </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light my-4 rounded" style="margin-left: 20px; margin-right: 20px;">
+          <div class="card-body" style="text-align: justify;">
+            <p class="h5" style="text-align: center;">
+              ¿Por qué conocer este metodo?
+            </p>
+            <p class="mt-3">
+              Para el conocedor le parecera intersante lo pequeño ques es algoritmos comparación a otros
+              metodos complejos y eficaces.
+              <br>
+              Y el lector necesita conocer metodos pequeños, que puedan darle el suficiente conocimiento para 
+                comprender metodos, pero no es necesario un algoritmo tan completo para explicar.
+                Ademas que como se considera para estos pequeños algoritmos, no es necesario utilizar grandes
+                cantidades de codigo para su aplicación, y tambien esto no aburriria al lector.
+                <br>
+                Conocimientos previos, unicamente pudiera ocupar comprender la forma de derivacion.
+            </p>
+            </div>  
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<section id="origen">
+  <div class="container" style="text-align: justify;">
+    <p class="h1" style="text-align: left;">Origen</p>
+    <p class="h5"> 
+        El trabajo de Newton fue realizado en 1669 pero publicado mucho
+        más tarde. Los métodos numéricos relacionados con el método Newton fueron utilizados por 
+        alKashı, Viete, Briggs y Oughtred, todos ellos muchos años antes que Newton.
+        Raphson, unos 20 años después de Newton, se acercó a la ecuación 1, pero sólo
+        para polinomios P(y) de grado 3, 4, 5, ... , 10. <br>
+         Dada una estimación g para a 
+        Raphson calcula una estimación "mejorada" g+x. Establece P(g+x) = 0,
+        expande, descarta términos en xk con k ≥ 2, y resuelve para x. Para polinomios,
+        el procedimiento de Raphson es equivalente a la aproximación lineal.
+        <br>
+        Raphson, al igual que Newton, parece no ser consciente de la conexión entre su
+        método y la derivada. La conexión se hizo unos 50 años más tarde
+        (Simpson, Euler), y el método de Newton finalmente fue más allá de las ecuaciones polinómicas.
+        <br> La conocida interpretación geométrica del método Newton puede
+        haber sido utilizada por primera vez por Mourraille (1768). El análisis de la convergencia del
+        el método de Newton tuvo que esperar hasta Fourier y Cauchy en la década de 1820.
+    </p>    
+  </div>
+</section>
+<br>
+
+<header class="header mt-1" id="ejemplos1">
+  <div class="container">
+    <div class="row"> <!-- HACE UNA FILA DE 12 COLUMNAS-->
+      <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
+         <div class="content-header-left">
+          <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light rounded">
+          <div class="card-body" style="text-align: justify;">
+            <h1> ALGORITMO </h1>           
+            <p class="mt-3">
+              <b>ENTRADA:<br></b>
+              Punto p0;  <br>
+              Tolerancia TOL;<br>
+              Cantidad máxima de iteraciones IT;<br>
+
+              HACER i = 1 // i es la variable que controla la cantidad de iteraciones<br>
+              MIENTRAS i <= IT HACER LOS PASOS 1 AL 5             
+               <br> PASO 1: HACER p = p0 – (f(p0) / f’(p0)) 
+               <br> PASO 2: SI |(p – p0)/p| < TOL ENTONCES
+               <br>&nbsp     <b>PASO 3: SALIDA(p)</b>
+               <br>&nbsp     PARAR
+               <br>PASO 4: HACER i = i + 1
+               <br>PASO 5: HACER p0 = p
+               <br>&nbsp   FIN MIENTRAS
+               <br>&nbsp   <b>SALIDA (“El método fracasó o procedimiento terminado sin éxito”)</b>
+              <br>PARAR
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
+        <div class="header-content-right">
+          <div class="card card border-warning  mb-3 shadow p-3 mb-5 bg-light rounded">
+            <div class="card-body" style="text-align: justify;">            
+              <h5> Ejemplo #1:</h5>
+              <p class="mt-3">
+                <b>ENTRADA:<br></b>
+                f(x) = -x^3-cos(x); <br>
+                f'(x) = -3x^2 + sen(x); <br>
+                p0 = -1 ;<br>
+                TOL;  10^-3 <br>
+                Cantidad máxima de iteraciones IT: 100<br>  
+                <a href="img/newton/res1.JPG" target="_blank">
+                  <img title="Ejemplo#1" src="img/newton/res1.JPG" alt="" style="width: 100%;">
+                  </a> 
+                 <br>
+                 <b>SALIDA:<br></b>
+                 <b>Exito en 5 iteraciones</b> <br> 
+                 <b>p</b> = -0.824168394075165                        
+                 <br> <b>f(-0.824168394075165)</b> = 0.000085949897766
+                 <br> <b>Error:</b> 0.000267225928837
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</header>
+
+
+  <header class="header mt-1" id="ejemplos2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
+          <div class="header-content-right">
+            <div class="card card border-warning  mb-3 shadow p-3 mb-5 bg-light rounded">
+              <div class="card-body" style="text-align: justify;">            
+                <h5> Ejemplo #2:</h5>
+                <p class="mt-3">
+                  <b>ENTRADA:<br></b>
+                  Intervalo: [-1,1] <br>
+                  f(x) = 2^x - 1.3; <br>
+                  f'(x) = 2^x *ln(2); <br>
+                  p0 = -1;<br>
+                  TOL;  10^-10 <br>
+                  Cantidad máxima de iteraciones IT: 100<br>  
+                  <a href="img/newton/rest2.JPG" target="_blank">
+                    <img title="Ejemplo#2" src="img/newton/rest2.JPG" alt="" style="width: 100%;">
+                    </a> 
+                   <br>
+                   <b>SALIDA:<br></b>
+                   <b>Exito en 6 iteraciones </b><br> 
+                   <b>p</b> = 0.378511637449265                       
+                   <br> <b>f(0.378511637449265)</b> = 0.000000012791474
+                   <br> <b>Error:</b> 0.0000000000000
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
+          <div class="header-content-right">
+            <div class="card card border-warning  mb-3 shadow p-3 mb-5 bg-light rounded">
+              <div class="card-body" style="text-align: justify;">            
+                <h5> Ejemplo #3:</h5>
+                <p class="mt-3">
+                  <b>ENTRADA:<br></b>
+                  Intervalo [a, b]: [1,4] ;<br>
+                  f(x) = x^3 -2x^2; <br>
+                  f'(x) = 3x^2 -4x; <br>    
+                  p0 = 1.5; <br>
+                  TOL;  10^-5 <br>
+                  Cantidad máxima de iteraciones IT: 100<br>  
+                  <a href="img/newton/rest3.JPG" target="_blank">
+                    <img title="Ejemplo#3" src="img/newton/rest3.JPG" alt="" style="width: 100%;">
+                    </a> 
+                   <br>
+                   <b>SALIDA:<br></b>
+                   <b>Exito en 9 iteraciones </b><br> 
+                   <b>p</b> = 2.690647602081299 
+                   <br> <b>f(2.690647602081299)</b> = 0.0.000000953674316
+                   <br> <b>Error:</b> 0.0000000000000
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<section id="cod-c">
+  <header class="header mt-1">
+    <div class="container">
+      <div class="row"> <!-- HACE UNA FILA DE 12 COLUMNAS-->
+        
+        <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
+           <div class="header-content-right">
+             <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light rounded">
+               <div class="card-body" style="text-align: justify;">
+                 <h1> Descargar codigo en c++ </h1>          
+               <p class="mt-3">
+               El código en c++ para la utilización del metodo lo puede descargar en esta seccion.
+               <i>Este codigo está optimizado para utilizarlo en el software de Visual Basic</i>              
+               </p> 
+               <a href="codigo/newton/MetodoNewton-Raphson.cpp" download="NewtonRaphsonC++.cpp" class="btn btn-outline-info mt-2 header-btn">Descargar codigo</a>         
+               </div>
+             </div>
+           </div>
+        </div>
+        <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
+          <div class="header-content-right">
+            <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light rounded">
+              <div class="card-body" style="text-align: justify;">
+                <h1> Descargar codigo en Matlab</h1>             
+              <p class="mt-3">
+              El código en Matlab para la utilización del metodo lo puede descargar en esta seccion.
+              <i>Este codigo está optimizado para utilizarlo en el software de Matlab</i>              
+              </p>          
+              <a href="codigo/newton/NewtonRaphson.m" download="biseccionMatlab.m" class="btn btn-outline-info mt-2 header-btn">Descargar codigo</a>
+              </div>
+            </div>
+          </div>
+       </div>
+      </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="" id="adven" style="background: rgb(236, 245, 247);">
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
+          <div class="card-body" style="text-align: justify;">
+            
+          <h5> Ventajas: </h5>
+            <p class="mt-3">
+            * Uno de los metodos que converge más rápido.<br>
+            * Converge en la raiz cuadraticamente, es decir, la tasa de convergencia es 2.   <br>
+            * A medida que nos acercamos a la raiz, el número de digitos significativos se duplica aproximadamente en cada paso.<br>
+            * Hace que podamos obtener resultados más precisos para una raíz que se obtuvo previamente en algún otro método de convergencia.  <br>                        
+            </p>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="desv" style="background: rgb(236, 245, 247);">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light  rounded">
+            <div class="card-body" style="text-align: justify;">
+              <h5> Desventajas :</h5>
+              <p class="mt-3">
+                * Necesita una funcion derivada dentro del algoritmo. <br>
+                * Si la tangente es paralela o casi paralela al eje x, el método no converge. <br>
+                * Normalmente se espera que el método de Newton converja sólo cerca de la solución.<br>
+                * Si bien la convergenia está asegurada, está puede llevar mucho más tiempo que otros metodos.<br>                
+                * No se puede aplicar si hay discontinuidades en el intervalo, debe ser función lineal.     <br>
+              </p>   
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="" id="referencias" style="background: rgb(236, 245, 247);">
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
+          <div class="card-body" style="text-align: justify;">
+            
+          <h5> Acá podrá amplicar la información y encontrara las referencias de diferentes conceptos que se utilizaron en esta presentación: </h5>
+            <p class="mt-3">
+            *<a target="_blank" href="https://www.math.ubc.ca/~anstee/math104/newtonmethod.pdf">https://www.math.ubc.ca/~anstee/math104/newtonmethod.pdf</a><br>
+            * <a target="_blank" href="https://es.wikipedia.org/wiki/M%C3%A9todo_de_Newton">https://es.wikipedia.org/wiki/M%C3%A9todo_de_Newton</a>     <br>
+            * <a target="_blank" href="https://www.computerscienceai.com/2019/03/newton-raphsons-method.html#adv">https://www.computerscienceai.com/2019/03/newton-raphsons-method.html#adv</a> <br>                      
+            </p>
+        </div>
+      </div>
+      </div>      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<br><br><br><br>
+<!--  BOOSTRAP DE SCRIPT -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<!-- SCRIPT -->
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.content-header-left',{
+      duration: 2000,
+      origin: 'top',
+      distance: '300px'
+    });
+    window.sr = ScrollReveal();
+    sr.reveal('.header-content-right',{
+      duration: 2000,
+      origin: 'rigth',
+      distance: '300px'
+    });
+    window.sr = ScrollReveal();
+    sr.reveal('.header-btn',{
+      duration: 2000,
+      origin: 'bottom',
+      delay: 2000
+    });
+    window.sr = ScrollReveal();
+    sr.reveal('#testimonial',{
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+</script>
+
+</body>
+</html>
