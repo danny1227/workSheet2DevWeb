@@ -1,2 +1,2 @@
-# hoja de trabajo 2
-Ejercicio hoja 2 desarollo web
+# Metodos Numericos
+Pagina Dummy con HTML, CSS, Javascript  sobre informacion para metodos numericos
